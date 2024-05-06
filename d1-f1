@@ -1,0 +1,13 @@
+#!/bin/bash
+#writing the shell script in feature branch
+read -p "Enter the salary: " sal
+if [ "$sal" -le 10000 ];
+then
+	echo "No tax"
+elif [ "$sal" -gt 10000 ] && [ "$sal" -le 25000 ];
+then
+	echo "5% tax"
+else
+	echo "10% tax"
+fi
+
